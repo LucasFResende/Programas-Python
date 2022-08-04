@@ -14,7 +14,7 @@ else:
 
 palavra_secreta = palavra_secreta.lower()
 letras_digitadas = []
-vidas = 3
+vidas = 5
 
 while True:
     if vidas == 0:
