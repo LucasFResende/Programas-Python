@@ -1,12 +1,12 @@
 import os
 
-numeros = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+numeros = list(str(x) for x in range(0, 10))
 
 palavra_secreta = input('Digite a palavra secreta: ')
 
 for c in numeros:
     while c in palavra_secreta:
-        palavra_secreta = input('Digite uma palavra válida')
+        palavra_secreta = input('Digite uma palavra válida: ')
 
 if os.name == 'nt':
     os.system('cls')
