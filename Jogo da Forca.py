@@ -1,5 +1,3 @@
-import os
-
 numeros = list(str(x) for x in range(0, 10))
 
 palavra_secreta = input('Digite a palavra secreta: ')
@@ -7,12 +5,7 @@ palavra_secreta = input('Digite a palavra secreta: ')
 for c in numeros:
     while c in palavra_secreta:
         palavra_secreta = input('Digite uma palavra válida: ')
-
-if os.name == 'nt':
-    os.system('cls')
-else:
-    os.system('clear')
-
+print('\n'*50)
 palavra_secreta = palavra_secreta.lower()
 letras_certas = []
 todas_letras_digitadas = []
